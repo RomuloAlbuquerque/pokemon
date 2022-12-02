@@ -16,7 +16,7 @@
 
 .content-main{
     width: 80%;
-    height: 1000px;
+    /* height: 1000px; */
     border: 1px solid transparent;
     margin: auto;
     margin-top: 70px;
@@ -30,25 +30,13 @@
 }
 
 .container-cards-main{
-    width: 99%;
-    height: calc(99% - 50px);
+    width: 100%;
     margin: 30px auto;
     border: 1px solid transparent;
 }
 
-.container-row-cards-main{
-    width: 99%;
-    height: 33%;
-    margin: auto;
-    padding: 10px 0;
-    border: 1px solid transparent;
-    display: flex;
-    justify-content: space-between;
-}
-
 .container-card-main{
-    width: 32%;
-    height: 99%;
-    border: 1px solid transparent;
+    margin: 20px 0;
+    height: 300px;
 
 }

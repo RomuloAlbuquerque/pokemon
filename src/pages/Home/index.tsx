@@ -1,12 +1,22 @@
+import "./style.css";
 import Card from "../../components/Card";
 import Navbar from "../../components/Navbar";
 import Navigation from "../../components/Navigation";
-import { pikachu } from "../../objects/cardsObject";
-import { charmander } from "../../objects/cardsObject";
-import { squirtle } from "../../objects/cardsObject";
-import "./style.css";
-
-
+import {
+  bulbasaur,
+  pikachu,
+  charmander,
+  squirtle,
+  caterpie,
+  metapod,
+  butterfree,
+  beedrill,
+  pidgey,
+  weedle,
+  rattata,
+  clefairy,
+  jigglypuff,
+} from "../../objects/cardsObject";
 
 const Home = () => {
   return (
@@ -20,37 +30,45 @@ const Home = () => {
           <Navigation />
         </div>
         <div className="container-cards-main">
-          <div className="container-row-cards-main">
-            <div className="container-card-main">
-              <Card card={pikachu}/>
+          <div className="row">
+            <div className="container-card-main col-sm-12 col-md-4">
+              <Card card={pikachu} />
             </div>
-            <div className="container-card-main">
-              <Card card={charmander}/>
+            <div className="container-card-main col-sm-12 col-md-4">
+              <Card card={charmander} />
             </div>
-            <div className="container-card-main">
-              <Card card={squirtle}/>
+            <div className="container-card-main col-sm-12 col-md-4">
+              <Card card={squirtle} />
             </div>
-          </div>
-          <div className="container-row-cards-main">
-            <div className="container-card-main">
-              <Card card={pikachu}/>
+            <div className="container-card-main col-sm-12 col-md-4">
+              <Card card={bulbasaur} />
             </div>
-            <div className="container-card-main">
-              <Card card={pikachu}/>
+            <div className="container-card-main col-sm-12 col-md-4">
+              <Card card={caterpie} />
             </div>
-            <div className="container-card-main">
-              <Card card={pikachu}/>
+            <div className="container-card-main col-sm-12 col-md-4">
+              <Card card={metapod} />
             </div>
-          </div>
-          <div className="container-row-cards-main">
-            <div className="container-card-main">
-              <Card card={pikachu}/>
+            <div className="container-card-main col-sm-12 col-md-4">
+              <Card card={butterfree} />
             </div>
-            <div className="container-card-main">
-              <Card card={pikachu}/>
+            <div className="container-card-main col-sm-12 col-md-4">
+              <Card card={beedrill} />
             </div>
-            <div className="container-card-main">
-              <Card card={pikachu}/>
+            <div className="container-card-main col-sm-12 col-md-4">
+              <Card card={pidgey} />
+            </div>
+            <div className="container-card-main col-sm-12 col-md-4">
+              <Card card={weedle} />
+            </div>
+            <div className="container-card-main col-sm-12 col-md-4">
+              <Card card={rattata} />
+            </div>
+            <div className="container-card-main col-sm-12 col-md-4">
+              <Card card={clefairy} />
+            </div>
+            <div className="container-card-main col-sm-12 col-md-4">
+              <Card card={jigglypuff} />
             </div>
           </div>
         </div>

@@ -1,25 +1,35 @@
 import "./style.css";
-import logo from '../../assets/img/logo.png'
+import logo from "../../assets/img/logo.png";
 
 const Navbar = () => {
   return (
-    <div className="container-navbar">
-      <div className="content-group-navbar">
-        <div className="logo-navbar">
-          <img
-            src={logo}
-            alt="logo"
-          />
+    <nav className="navbar navbar-expand-sm nav-container container-navbar">
+      <div className="container-fluid">
+        <div className="logo logo-navbar">
+          <img src={logo} alt="logo" />
         </div>
-      </div>
-      <div className="content-group-navbar content-menu-navbar">
-        <ul>
+
+        <button
+          className="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbar-main"
+          aria-controls="navbar-main"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span className="navbar-toggler-icon"></span>
+        </button>
+
+        <div className="collapse navbar-collapse container-menu" id="navbar-main">
+          <ul className="navbar-nav offset-md-2 list-navbar">
             <li>Home</li>
             <li>Sobre</li>
             <li>Admin</li>
-        </ul>
+          </ul>
+        </div>
       </div>
-    </div>
+    </nav>
   );
 };
 
