@@ -1,0 +1,22 @@
+.container-navigation {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding-left: 20px;
+  background-color: #3a3b3c;
+  border-radius: 5px;
+}
+
+.container-navigation span{
+  font-size: 0.8em;
+}
+
+.primary-point{
+  color: orange;
+}
+
+.next-point{
+  color: #d8dadf;
+}
