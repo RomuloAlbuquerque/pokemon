@@ -6,8 +6,6 @@ const MyRoutes = () => (
   <BrowserRouter>
     <Routes>
       <Route path="/" element={<Home />} />
-    </Routes>
-    <Routes>
       <Route path="/collection" element={<Collection />} />
     </Routes>
   </BrowserRouter>
