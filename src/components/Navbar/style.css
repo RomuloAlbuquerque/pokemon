@@ -1,6 +1,10 @@
 .container-navbar {
   background-color: #2c2c2e;
-  height: 100px;
+  min-height: 100px;
+}
+
+.container-navbar button{
+  box-shadow: 1px 1px 4px 4px #1e2e55;
 }
 
 .logo-navbar {
@@ -28,11 +32,11 @@
   font-size: 0.9em;
   letter-spacing: 0.7px;
   font-weight: bold;
-  margin: 15px 0;
+  margin: 10px 0;
 }
 
 .list-navbar a, .list-navbar a:hover{
-  color: white;
+  color: #d8dadf;
   text-decoration: none;
 }
 
