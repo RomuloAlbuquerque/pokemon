@@ -1,10 +1,15 @@
+import { user } from 'types/user'
 import './style.css'
 
-const Navigation = ()=>{
+type Props = {
+    user: user;
+}
+
+const Navigation = ({user}:Props)=>{
     return (
         <div className='container-navigation'>
-            <span className='primary-point'>Meus Pokemons</span>
-            <span className='next-point'>` / Pokemons Cadastrados</span>
+            <span className='primary-point'>{user.info}</span>
+            <span className='next-point'>` / {user.subInfo}</span>
         </div>
     )
 }

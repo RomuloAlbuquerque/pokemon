@@ -23,9 +23,9 @@ const Navbar = () => {
 
         <div className="collapse navbar-collapse container-menu" id="navbar-main">
           <ul className="navbar-nav offset-md-2 list-navbar">
-            <li>Home</li>
-            <li>Sobre</li>
-            <li>Admin</li>
+            <a href="/"><li>Home</li></a>
+            <a href="/collection"><li>Coleção</li></a>
+            <a href="/"><li>Admin</li></a>
           </ul>
         </div>
       </div>

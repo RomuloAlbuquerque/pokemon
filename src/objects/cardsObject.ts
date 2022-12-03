@@ -1,5 +1,11 @@
 import { card } from "../types/card";
 
+export const ashCatchum: card = {
+    title: 'Ash Catchum',
+    detail: 'Este é o Ash',
+    imgUrl: 'https://www.pngplay.com/wp-content/uploads/11/Pikachu-Pokemon-PNG-Photo-Image.png' 
+}
+
 export const pikachu: card = {
     title: 'Pikachu',
     detail: 'Este é o picachu',
