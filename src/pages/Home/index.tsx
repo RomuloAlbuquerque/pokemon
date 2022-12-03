@@ -1,23 +1,15 @@
+import Card from "components/CardHome";
+import InfoHome from "components/InfoHome";
 import "./style.css";
-import Card from "../../components/Card";
-import Navigation from "../../components/Navigation";
-import { userCard } from "objects/userCard";
 
-const Home = () => {
+const Collection = () => {
   return (
-    <>
-      <div className="container-nav-map-main">
-        <Navigation user={userCard.user}/>
-      </div>
-      <div className="container-cards-main">
-        <div className="row">
-          <div className="container-card-main col-sm-12 col-md-4">
-            <Card card={userCard.card} />
-          </div>
-        </div>
-      </div>
-    </>
+    <div className="content-main">
+      <InfoHome />
+
+      <Card />
+    </div>
   );
 };
 
-export default Home;
+export default Collection;

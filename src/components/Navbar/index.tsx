@@ -21,11 +21,20 @@ const Navbar = () => {
           <span className="navbar-toggler-icon"></span>
         </button>
 
-        <div className="collapse navbar-collapse container-menu" id="navbar-main">
+        <div
+          className="collapse navbar-collapse container-menu"
+          id="navbar-main"
+        >
           <ul className="navbar-nav offset-md-2 list-navbar">
-            <a href="/"><li>Home</li></a>
-            <a href="/collection"><li>Coleção</li></a>
-            <a href="/"><li>Admin</li></a>
+            <a href="/">
+              <li>Home</li>
+            </a>
+            <a href="/collection">
+              <li>Coleção</li>
+            </a>
+            <a href="/">
+              <li>Admin</li>
+            </a>
           </ul>
         </div>
       </div>

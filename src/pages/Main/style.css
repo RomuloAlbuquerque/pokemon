@@ -7,15 +7,3 @@
     background-color: #1c1c1f;
     min-height: 100vh;
 }
-
-.container-navbar-collection{
-    width: 100%;
-    height: 70px;
-    border: 1px solid transparent;
-}
-
-.content-main{
-    width: 80%;
-    border: 1px solid transparent;
-    margin: 90px auto 0;
-}

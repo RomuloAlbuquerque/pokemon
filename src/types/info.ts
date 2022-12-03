@@ -1,4 +1,4 @@
-export type user = {
+export type Info = {
     info: string;
     subInfo: string;
-}
+  }

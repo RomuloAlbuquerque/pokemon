@@ -1,18 +1,7 @@
-.container-nav-map-main{
-    height: 50px;
-    width: 99%;
+.content-main{
+    width: 80%;
     margin: auto;
-    border: 1px solid transparent;
 }
 
-.container-cards-main{
-    width: 100%;
-    margin: 60px auto;
-    border: 1px solid transparent;
-}
 
-.container-card-main{
-    margin: 20px 0;
-    height: 300px;
 
-}
