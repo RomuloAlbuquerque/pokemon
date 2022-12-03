@@ -1,12 +1,27 @@
 import "./style.css";
-import logo from "../../assets/img/logo.png";
+import { useEffect, useState } from "react";
+import axios from "axios";
+
+type Logo = {
+  name: string;
+  url: string;
+}
 
 const Navbar = () => {
+
+  const [el, setEl] = useState<Logo>();
+
+  useEffect(() => {
+    axios.get(`http://localhost:3001/admin/logo-home`).then((response) => {
+      setEl(response.data);
+    });
+  },[]);
+console.log(el?.url)
   return (
     <nav className="navbar navbar-expand-sm nav-container container-navbar">
       <div className="container-fluid">
         <div className="logo logo-navbar">
-          <img src={logo} alt="logo" />
+          <img src={el?.url} alt={el?.name} />
         </div>
 
         <button
