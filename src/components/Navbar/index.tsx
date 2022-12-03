@@ -16,7 +16,7 @@ const Navbar = () => {
       setEl(response.data);
     });
   },[]);
-console.log(el?.url)
+
   return (
     <nav className="navbar navbar-expand-sm nav-container container-navbar">
       <div className="container-fluid">
