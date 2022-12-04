@@ -1,22 +1,23 @@
 import axios from "axios";
 import { useEffect, useState } from "react";
 import { card } from "types/card";
+import { baseUrl } from "utils/baseUrl";
 import "./style.css";
 
 const CardCollection = () => {
-  const [ca, setCa] = useState<card[]>();
+  const [el, setEl] = useState<card[]>();
 
   useEffect(() => {
-    axios.get(`http://localhost:3001/client/card-collection`).then((response) => {
-      setCa(response.data);
-    });
+    axios.get(`${baseUrl}/client/card-collection`, { headers: {"ngrok-skip-browser-warning": 6942}}).then((response) => {
+      setEl(response.data);
+    })
   }, []);
 
   return (
     <div>
       <div className="container-cards-main">
         <div className="row">
-          {ca?.map((x) => (
+          {el?.map((x) => (
             <div className="container-card-main col-sm-12 col-md-4" key={x.id}>
               <div className="container-card">
                 <div className="content-card">

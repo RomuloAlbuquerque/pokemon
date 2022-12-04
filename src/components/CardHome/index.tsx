@@ -1,15 +1,16 @@
 import axios from "axios";
 import { useEffect, useState } from "react";
 import { card } from "types/card";
+import { baseUrl } from "utils/baseUrl";
 import "./style.css";
 
 const CardHome = () => {
-  const [ca, setCa] = useState<card>();
+  const [el, setEl] = useState<card>();
 
   useEffect(() => {
-    axios.get(`http://localhost:3001/admin/card-home`).then((response) => {
-      setCa(response.data);
-    });
+    axios.get(`${baseUrl}/admin/card-home`, { headers: {"ngrok-skip-browser-warning": 6942}}).then((response) => {
+      setEl(response.data);
+    })
   },[]);
   return (
     <div>
@@ -19,13 +20,13 @@ const CardHome = () => {
               <div className="container-card">
                 <div className="content-card">
                   <div className="title-card">
-                    <h2>{ca?.title}</h2>
+                    <h2>{el?.title}</h2>
                   </div>
                   <div className="detail-card">
-                    <p>{ca?.detail}</p>
+                    <p>{el?.detail}</p>
                   </div>
                   <div className="icon-card">
-                    <img src={ca?.imgUrl} alt={ca?.title} />
+                    <img src={el?.imgUrl} alt={el?.title} />
                   </div>
                 </div>
               </div>

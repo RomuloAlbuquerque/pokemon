@@ -1,6 +1,7 @@
 import "./style.css";
 import { useEffect, useState } from "react";
 import axios from "axios";
+import { baseUrl } from "utils/baseUrl";
 
 type Logo = {
   name: string;
@@ -12,9 +13,9 @@ const Navbar = () => {
   const [el, setEl] = useState<Logo>();
 
   useEffect(() => {
-    axios.get(`http://localhost:3001/admin/logo-home`).then((response) => {
+    axios.get(`${baseUrl}/admin/logo-home`, { headers: {"ngrok-skip-browser-warning": 6942}}).then((response) => {
       setEl(response.data);
-    });
+    })
   },[]);
 
   return (
