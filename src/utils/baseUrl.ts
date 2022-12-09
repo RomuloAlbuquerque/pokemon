@@ -1,1 +1,1 @@
-export const baseUrl = 'https://5613-2804-2468-a880-e024-643e-a2b1-dde2-1bc3.sa.ngrok.io://localhost:3001';
+export const baseUrl = 'https://5613-2804-2468-a880-e024-643e-a2b1-dde2-1bc3.sa.ngrok.io';
