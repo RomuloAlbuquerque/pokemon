@@ -1,0 +1,44 @@
+.container-cards-scorecard {
+    width: 100%;
+    margin: auto;
+  }
+  
+  .container-card-scorecard {
+    margin-bottom: 20px;
+  }
+  
+  .card-scorecard{
+    height: 300px;
+    width: 100%;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    background-color: #2c2c2e;
+  }
+  
+  .content-card-scorecard {
+    width: 90%;
+    height: 90%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+  }
+  
+  .title-card-scorecard h2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: auto;
+    height: auto;
+    padding: 5px;
+    margin: 0;
+    color: #d8dadf;
+    font-size: 1.3em;
+    border-radius: 10px;
+    text-align: center;
+    background-color: #222225;
+  }
+  

@@ -1,0 +1,9 @@
+.content-main{
+    width: 80%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    margin: 0;
+    
+}

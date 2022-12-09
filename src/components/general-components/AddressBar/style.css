@@ -1,0 +1,28 @@
+.container-addressbar{
+  height: 50px;
+  width: 100%;
+  margin: 40px auto;
+}
+
+.container-texts-addressbar {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding-left: 20px;
+  background-color: #3a3b3c;
+  border-radius: 5px;
+}
+
+.container-texts-addressbar span{
+  font-size: 0.8em;
+}
+
+.info-addressbar{
+  color: yellow;
+}
+
+.subinfo-addressbar{
+  color: #d8dadf;
+}

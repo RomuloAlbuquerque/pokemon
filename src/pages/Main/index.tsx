@@ -1,6 +1,6 @@
-import Navbar from "components/Navbar";
+import Navbar from "components/general-components/Navbar";
 import MyRoutes from "MyRoutes";
-import "./style.css";
+import "../Main/style.css";
 
 const Main = () => {
   return (
