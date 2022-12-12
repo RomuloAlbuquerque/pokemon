@@ -4,8 +4,7 @@ const scorecard = () => {
   return (
     <div>
       <div className="container-cards-scorecard">
-        <div className="row">
-          <div className="container-card-scorecard col-sm-12 col-md-4">
+
             <div className="container-card-scorecard">
               <div className="content-card-scorecard">
                 <div className="img-card-scorecard">
@@ -17,8 +16,7 @@ const scorecard = () => {
             </div>
           </div>
         </div>
-      </div>
-    </div>
+
   );
 };
 

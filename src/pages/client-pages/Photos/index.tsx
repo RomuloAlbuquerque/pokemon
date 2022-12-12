@@ -14,8 +14,33 @@ const Photos = () => {
       <div className="row">
         <div className="col-sm-12 col-md-4">
           <Photo />
+        </div>
+
+        <div className="col-sm-12 col-md-4">
           <Photo />
+        </div>
+
+        <div className="col-sm-12 col-md-4">
           <Photo />
+        </div>
+
+        <div className="col-sm-12 col-md-4">
+          <Photo />
+        </div>
+
+        <div className="col-sm-12 col-md-4">
+          <Photo />
+        </div>
+
+        <div className="col-sm-12 col-md-4">
+          <Photo />
+        </div>
+
+        <div className="col-sm-12 col-md-4">
+          <Photo />
+        </div>
+
+        <div className="col-sm-12 col-md-4">
           <Photo />
         </div>
       </div>

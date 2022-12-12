@@ -16,17 +16,23 @@ const Client = () => {
     <div className="content-main">
       <AddressBar info={info} />
 
-      <Link className="link" to="/about">
-        <AboutCard />
-      </Link>
-
-      <Link className="link" to="/score">
-        <ScoreCard />
-      </Link>
-
-      <Link className="link" to="/photos">
-        <PhotosCard />
-      </Link>
+      <div className="row">
+        <div className="col-sm-12 col-md-4">
+        <Link className="link" to="/about">
+          <AboutCard />
+          </Link>
+        </div>
+        <div className="col-sm-12 col-md-4">
+        <Link className="link" to="/score">
+          <ScoreCard />
+          </Link>
+        </div>
+        <div className="col-sm-12 col-md-4">
+        <Link className="link" to="/photos">
+          <PhotosCard />
+          </Link>
+        </div>
+      </div>
     </div>
   );
 };
