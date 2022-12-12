@@ -1,21 +1,21 @@
+import AdminCard from "components/admin-components/AdminCard";
 import AddressBar from "components/general-components/AddressBar";
-import CardHome from "components/home-components/HomeCard";
 import { Info } from "types/info";
-import "../Home/style.css";
+import "./style.css";
 
 const clients:Info = {
   info: 'Rosângela',
   subInfo: 'Seja Bem Vinda Ao Seu Espaço'
 }
 
-const Home = () => {
+const Admin = () => {
   return (
-    <div className="content-home">
+    <div className="content-admin">
       <AddressBar info={clients}/>
 
-      <CardHome />
+      <AdminCard />
     </div>
   );
 };
 
-export default Home;
+export default Admin;

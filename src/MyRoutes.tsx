@@ -5,6 +5,7 @@ import Score from "pages/client-pages/Score";
 import Clients from "pages/client-pages/Clients";
 import Client from "pages/client-pages/Client";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
+import Admin from "pages/admin-pages/Admin";
 
 const MyRoutes = () => (
   <BrowserRouter>
@@ -15,6 +16,8 @@ const MyRoutes = () => (
       <Route path="/about" element={<About />} />
       <Route path="/score" element={<Score />} />
       <Route path="/photos" element={<Photos />} />
+
+      <Route path="/admin" element={<Admin />} />
     </Routes>
   </BrowserRouter>
 );

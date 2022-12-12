@@ -1,27 +1,92 @@
-import './style.css'
+import "./style.css";
+import check from "../../../../assets/img/check-mock.png";
+import uncheck from "../../../../assets/img/uncheck-mock.png";
+
 const Score = () => {
-
-
-    const el = [{}, {}, {}, {}, {}, {}, {}, {}, {}]
   return (
     <div>
-      <div className="container-cards-main">
+      <div className="container-cards-score">
         <div className="row">
-          {el?.map((x) => (
-            <div className="container-card-main col-sm-12 col-md-4" >
-              <div className="container-card">
-              <div className="content-card">
-                  <div className="title-card">
-                    <h2>Score</h2>
-                  </div>
-
-                  <div className="icon-card">
-                    <div className="score"></div>
-                  </div>
+          <div className="col-sm-6 col-md-4">
+            <div className="content-card-score">
+              <div className="icon-card">
+                <h1 className="n-visita-score">1ª Visita</h1>
+                <div className="score">
+                  <img src={check} alt="check-mock" />
                 </div>
               </div>
             </div>
-          ))}
+          </div>
+          <div className="col-sm-6 col-md-4">
+            <div className="content-card-score">
+              <div className="icon-card">
+                <h1 className="n-visita-score">2ª Visita</h1>
+                <div className="score">
+                  <img src={check} alt="check-mock" />
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className="col-sm-6 col-md-4">
+            <div className="content-card-score">
+              <div className="icon-card">
+                <h1 className="n-visita-score">3ª Visita</h1>
+                <div className="score">
+                  <img src={check} alt="check-mock" />
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className="col-sm-6 col-md-4">
+            <div className="content-card-score">
+              <div className="icon-card">
+                <h1 className="n-visita-score">4ª Visita</h1>
+                <div className="score">
+                  <img src={uncheck} alt="uncheck-mock" />
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className="col-sm-6 col-md-4">
+            <div className="content-card-score">
+              <div className="icon-card">
+                <h1 className="n-visita-score">5ª Visita</h1>
+                <div className="score">
+                  <img src={uncheck} alt="uncheck-mock" />
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className="col-sm-6 col-md-4">
+            <div className="content-card-score">
+              <div className="icon-card">
+                <h1 className="n-visita-score">6ª Visita</h1>
+                <div className="score">
+                  <img src={uncheck} alt="uncheck-mock" />
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className="col-sm-6 col-md-4">
+            <div className="content-card-score">
+              <div className="icon-card">
+                <h1 className="n-visita-score">7ª Visita</h1>
+                <div className="score">
+                  <img src={uncheck} alt="uncheck-mock" />
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className="col-sm-6 col-md-4">
+            <div className="content-card-score">
+              <div className="icon-card">
+                <h1 className="n-visita-score">8ª Visita</h1>
+                <div className="score">
+                  <img src={uncheck} alt="uncheck-mock" />
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>

@@ -1,10 +1,11 @@
 .container-navbar {
-  background-color: #2c2c2e;
+  background-color: rgba(236, 38, 143, 0.9);
+      /* background-color: #2c2c2e; */
   min-height: 100px;
 }
 
 .container-navbar button{
-  box-shadow: 1px 1px 4px 4px #1e2e55;
+  box-shadow: 0px 0px 0px 3px black;
 }
 
 .logo-navbar {

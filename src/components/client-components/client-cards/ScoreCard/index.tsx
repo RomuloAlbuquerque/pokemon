@@ -1,14 +1,18 @@
 import "./style.css";
 
-const ScoreCard = () => {
+const scorecard = () => {
   return (
     <div>
       <div className="container-cards-scorecard">
-        <div className="container-card-scorecard">
-          <div className="card-scorecard">
-            <div className="content-card-scorecard">
-              <div className="title-card-scorecard">
-                <h2>SCORE</h2>
+        <div className="row">
+          <div className="container-card-scorecard col-sm-12 col-md-4">
+            <div className="container-card-scorecard">
+              <div className="content-card-scorecard">
+                <div className="img-card-scorecard">
+                  <div className="button-scorecard">
+                    <h1>Score</h1>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
@@ -18,4 +22,4 @@ const ScoreCard = () => {
   );
 };
 
-export default ScoreCard;
+export default scorecard;

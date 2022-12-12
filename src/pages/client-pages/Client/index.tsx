@@ -16,15 +16,15 @@ const Client = () => {
     <div className="content-main">
       <AddressBar info={info} />
 
-      <Link to="/about">
+      <Link className="link" to="/about">
         <AboutCard />
       </Link>
 
-      <Link to="/score">
+      <Link className="link" to="/score">
         <ScoreCard />
       </Link>
 
-      <Link to="/photos">
+      <Link className="link" to="/photos">
         <PhotosCard />
       </Link>
     </div>

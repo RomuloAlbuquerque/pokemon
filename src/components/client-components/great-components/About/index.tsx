@@ -1,24 +1,26 @@
 import "./style.css";
 
-const About = () => {
+const about = () => {
   return (
     <div>
-      <div className="container-cards-main">
+      <div className="container-cards-about">
         <div className="row">
-          <div className="container-card-main col-sm-12 col-md-4">
-            <div className="container-card">
-              <div className="content-card">
-                <div className="title-card">
-                  <h2>Sobre</h2>
-                </div>
-                <div className="detail-card">
-                  <p>Nome:</p>
-                  <p>Telefone:</p>
-                  <p>E-mail:</p>
-                  <p>Aniversário:</p>
-                  <p>Agendamento:</p>
-                  <p>Anotações:</p>
-                  <p>Pontos: 5</p>
+          <div className="container-card-about col-sm-12 col-md-4">
+            <div className="container-card-about">
+              <div className="content-card-about">
+                <div className="img-card-about">
+                  <div className="title-card-about">
+                    <h2>Sobre</h2>
+                  </div>
+                  <div className="detail-card-about">
+                    <p>Nome:</p>
+                    <p>Telefone:</p>
+                    <p>E-mail:</p>
+                    <p>Aniversário:</p>
+                    <p>Agendamento:</p>
+                    <p>Anotações:</p>
+                    <p>Pontos: 03</p>
+                  </div>
                 </div>
               </div>
             </div>
@@ -29,4 +31,4 @@ const About = () => {
   );
 };
 
-export default About;
+export default about;

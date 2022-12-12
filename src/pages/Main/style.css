@@ -1,9 +1,11 @@
 .main-collection{
+    /* background-image: url(/src/assets/img/bg.jpg); */
+    background-size: cover;
     padding: 0;
     margin: 0;
     border: 1px solid transparent;
     width: 100%;
     margin: auto;
-    background-color: #1c1c1f;
+    background-color: rgb(148, 17, 58);
     min-height: 100vh;
 }

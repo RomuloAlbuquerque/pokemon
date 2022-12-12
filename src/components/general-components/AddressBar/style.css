@@ -11,7 +11,8 @@
   justify-content: flex-start;
   align-items: center;
   padding-left: 20px;
-  background-color: #3a3b3c;
+  background-color: rgba(236, 38, 143, 0.9);
+  /* background-color: #3a3b3c; */
   border-radius: 5px;
 }
 

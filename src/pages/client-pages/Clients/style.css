@@ -3,5 +3,7 @@
     margin: auto;
 }
 
-
-
+a, li{
+    color: white;
+    text-decoration: none;
+  }
