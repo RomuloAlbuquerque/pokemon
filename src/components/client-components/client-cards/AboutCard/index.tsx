@@ -1,6 +1,7 @@
 import "./style.css";
 
 const AboutCard = () => {
+
   return (
     <div>
       <div className="container-cards-aboutcard">

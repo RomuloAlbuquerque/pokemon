@@ -20,7 +20,7 @@ const ClientCard = () => {
       <div className="container-cards-clientcard">
         <div className="row">
           {el?.map((x) => (
-            <div className="container-card-clientcard col-sm-12 col-md-4" key={x.id}>
+            <div className="container-card-clientcard col-sm-12 col -md-4" key={x.id}>
               <div className="card-clientcard">
                 <div className="content-card-clientcard">
                   <div className="title-card-clientcard">

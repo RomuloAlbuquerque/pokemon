@@ -1,6 +1,14 @@
+import axios from "axios";
+import { useEffect, useState } from "react";
+import { useParams } from "react-router-dom";
+import { card } from "types/card";
+import { baseUrl } from "utils/baseUrl";
 import "./style.css";
 
-const about = () => {
+const About = () => {
+
+
+
   return (
     <div>
       <div className="container-cards-about">
@@ -31,4 +39,4 @@ const about = () => {
   );
 };
 
-export default about;
+export default About;

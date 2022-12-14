@@ -8,6 +8,7 @@ const info: Info = {
 }
 
 const About = () => {
+
   return (
     <div className="content-main">
       <AddressBar info={info} />
