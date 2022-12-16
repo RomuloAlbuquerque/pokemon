@@ -1,5 +1,4 @@
 import "./style.css";
-import { Link } from "react-router-dom";
 import AddressBar from "components/general-components/AddressBar";
 import ClientCard from "components/client-components/client-cards/ClientCard";
 import { Info } from "types/info";
