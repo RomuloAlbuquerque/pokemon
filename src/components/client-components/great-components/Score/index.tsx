@@ -6,8 +6,6 @@ import axios from "axios";
 import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import { card } from "types/card";
-import scorecard from "components/client-components/client-cards/ScoreCard";
-import { render } from "react-dom";
 
 const Score = () => {
   const { id } = useParams();
