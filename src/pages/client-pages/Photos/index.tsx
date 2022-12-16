@@ -6,6 +6,7 @@ import { useParams } from "react-router-dom";
 import { card } from "types/card";
 import { Info } from "types/info";
 import { baseUrl } from "utils/baseUrl";
+import './style.css'
 
 const Photos = () => {
   
@@ -31,35 +32,35 @@ const Photos = () => {
     <div className="content-main">
       <AddressBar info={info} />
       <div className="row">
-        <div className="col-sm-12 col-md-4">
+        <div className="col-4 container-col">
           <Photo />
         </div>
 
-        <div className="col-sm-12 col-md-4">
+        <div className="col-4 container-col">
           <Photo />
         </div>
 
-        <div className="col-sm-12 col-md-4">
+        <div className="col-4 container-col">
           <Photo />
         </div>
 
-        <div className="col-sm-12 col-md-4">
+        <div className="col-4 container-col">
           <Photo />
         </div>
 
-        <div className="col-sm-12 col-md-4">
+        <div className="col-4 container-col">
           <Photo />
         </div>
 
-        <div className="col-sm-12 col-md-4">
+        <div className="col-4 container-col">
           <Photo />
         </div>
 
-        <div className="col-sm-12 col-md-4">
+        <div className="col-4 container-col">
           <Photo />
         </div>
 
-        <div className="col-sm-12 col-md-4">
+        <div className="col-4 container-col">
           <Photo />
         </div>
       </div>

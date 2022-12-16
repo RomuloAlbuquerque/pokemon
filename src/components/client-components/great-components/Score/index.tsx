@@ -44,7 +44,8 @@ const Score = () => {
       <div className="container-cards-score">
         <div className="row">
           {visit.map((x) => (
-            <div className="col-sm-6 col-md-4">
+                        <div className="col-4 container-col">
+            {/* // <div className="col-sm-6 col-md-4"> */}
               <div className="content-card-score">
                 <div className="icon-card">
                   <h1 className="n-visita-score">
@@ -58,7 +59,8 @@ const Score = () => {
             </div>
           ))}
           {unVisit.map((x) => (
-            <div className="col-sm-6 col-md-4">
+                        <div className="col-4 container-col">
+            {/* <div className="col-sm-6 col-md-4"> */}
               <div className="content-card-score">
                 <div className="icon-card">
                   <h1 className="n-visita-score">Pendente</h1>

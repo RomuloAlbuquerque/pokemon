@@ -24,7 +24,8 @@ const ClientCard = () => {
         <div className="row">
           {el?.map((x) => (
             <div
-              className="container-card-clientcard col-sm-12 col-md-4"
+            className="container-card-clientcard col-4"
+              // className="container-card-clientcard col-sm-12 col-md-4"
               key={x.id}
             >
               <div className="card-clientcard">

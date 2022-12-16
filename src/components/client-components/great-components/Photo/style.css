@@ -1,25 +1,27 @@
 .container-cards-photo {
     width: 100%;
     margin: auto;
-    padding: 0 13px;
+    background-color: rgb(97, 3, 34);
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
   
   .container-card-photo {
-    height: 300px;
+    height: 100%;
     width: 100%;
     margin: auto;
-    margin-bottom: 20px;
+    padding: 5px;
     display: flex;
     justify-content: center;
     align-items: center;
     border-radius: 10px;
-    background-color: rgb(97, 3, 34);
+
     /* background-color: #2c2c2e; */
   }
   
   .content-card-photo {
-    width: 90%;
-    height: 90%;
+
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -32,6 +34,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    padding: 2px;
+
   }
   
   .img-card-photo img {
@@ -39,6 +43,13 @@
     height: 100%;
     object-fit: cover;
     object-position: top;
+    border-radius: 10px;
+  }
 
+  @media(min-width: 576px){
+    .img-card-photo {
+      padding: 10px;
+  
+    }
   }
   

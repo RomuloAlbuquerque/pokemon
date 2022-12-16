@@ -8,7 +8,7 @@
 }
 
 .card-clientcard{
-  height: 300px;
+  height: 150px;
   width: 100%;
   margin: 0;
   display: flex;
@@ -17,6 +17,7 @@
   border-radius: 10px;
   background-color: rgb(119, 3, 42);
   /* background-color: #2c2c2e; */
+  font-size: 0.7em;
 }
 
 .card-clientcard a{
@@ -45,7 +46,8 @@
   font-size: 1.3em;
   border-radius: 10px;
   text-align: center;
-  background-color: rgb(97, 3, 34);
+  font-weight: bold;
+  /* background-color: rgb(97, 3, 34); */
   /* background-color: #222225; */
 }
 
@@ -55,6 +57,7 @@
   border: 1px solid transparent;
   margin: 0;
   padding: 0;
+  font-size: 1em;
 }
 
 .img-card-clientcard {
@@ -77,4 +80,16 @@
   border-radius: 50%;
 }
 
+@media(min-width: 576px){
+  .card-clientcard{
+    height: 300px;
+    font-size: 1.2em;
+  }
+}
+
+@media(min-width: 768px){
+  .title-card-clientcard h2{
+      background-color: rgb(97, 3, 34);
+  }
+}
 

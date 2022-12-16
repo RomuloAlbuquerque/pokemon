@@ -5,7 +5,7 @@ import "./style.css";
 
 const clients:Info = {
   info: 'Rosângela',
-  subInfo: 'Seja Bem Vinda Ao Seu Espaço'
+  subInfo: 'Admin'
 }
 
 const Admin = () => {
