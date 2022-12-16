@@ -1,4 +1,4 @@
 export type Info = {
-    info: string;
+    info: any;
     subInfo: string;
   }

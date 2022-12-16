@@ -4,8 +4,8 @@ import { Info } from "types/info";
 import "../Home/style.css";
 
 const clients:Info = {
-  info: 'Rosângela',
-  subInfo: 'Seja Bem Vinda Ao Seu Espaço'
+  info: 'Rosângela /',
+  subInfo: 'Seja Bem Vinda'
 }
 
 const Home = () => {

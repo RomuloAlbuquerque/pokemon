@@ -14,9 +14,9 @@ const Clients = () => {
     <div className="content-main">
       <AddressBar info={info} />
 
-      <Link className="text-decoration-none" to='/client/2'>
+
         <ClientCard />
-      </Link>
+
     </div>
   );
 };

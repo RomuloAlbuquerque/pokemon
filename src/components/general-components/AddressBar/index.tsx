@@ -11,7 +11,7 @@ const AddressBar = ({info}:Props) => {
     <div className="container-addressbar">
       <div className="container-texts-addressbar">
         <span className="info-addressbar">{info.info}</span>
-        <span className="subinfo-addressbar">: {info.subInfo}</span>
+        <span className="subinfo-addressbar">{info.subInfo}</span>
       </div>
     </div>
   );

@@ -13,9 +13,9 @@ const MyRoutes = () => (
       <Route path="/" element={<Home />} />
       <Route path="/client" element={<Clients />} />
       <Route path="/client/:id" element={<Client />} />
-      <Route path="/about" element={<About />} />
-      <Route path="/score" element={<Score />} />
-      <Route path="/photos" element={<Photos />} />
+      <Route path="/client/:id/about" element={<About />} />
+      <Route path="/client/:id/score" element={<Score />} />
+      <Route path="/client/:id/photos" element={<Photos />} />
 
       <Route path="/admin" element={<Admin />} />
     </Routes>

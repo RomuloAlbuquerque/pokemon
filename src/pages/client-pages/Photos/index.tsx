@@ -1,13 +1,32 @@
+import axios from "axios";
 import Photo from "components/client-components/great-components/Photo";
 import AddressBar from "components/general-components/AddressBar";
+import { useEffect, useState } from "react";
+import { useParams } from "react-router-dom";
+import { card } from "types/card";
 import { Info } from "types/info";
-
-const info: Info = {
-  info: "Cliente/ Nome/ Fotos",
-  subInfo: "",
-};
+import { baseUrl } from "utils/baseUrl";
 
 const Photos = () => {
+  
+  const {id} = useParams()
+
+  const [el, setEl] = useState<card>();
+
+  useEffect(() => {
+    axios
+    .get(`${baseUrl}/client/card-details/${id}`, {
+      headers: { "ngrok-skip-browser-warning": 6942 },
+    })
+    .then((response) => {
+      setEl(response.data);
+    });
+}, [id]);
+
+  const info: Info = {
+    info: `Cliente/ ${el?.title}/ Fotos`,
+    subInfo: ""
+  }
   return (
     <div className="content-main">
       <AddressBar info={info} />
