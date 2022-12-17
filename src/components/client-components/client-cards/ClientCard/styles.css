@@ -14,7 +14,6 @@
   align-items: center;
   border-radius: 10px;
   background-color: rgb(119, 3, 42);
-  /* background-color: #2c2c2e; */
   font-size: 0.7em;
   padding-top: 10px;
 }
@@ -25,7 +24,8 @@
 }
 
 .content-card-clientcard {
-  height: 190px;
+  min-height: 160px;
+  height: auto;
   margin: auto;
   display: flex;
   justify-content: center;
@@ -75,6 +75,19 @@
   object-fit: cover;
   object-position: top;
   border-radius: 50%;
+}
+
+@media(max-width: 250px){
+  .content-card-clientcard {
+    width: 70px;
+    height: auto;
+    min-height: 120px;
+    font-size: 8px;
+  }
+  .img-card-clientcard {
+    max-height: 100%;
+    max-width: 100%;
+  }
 }
 
 @media(min-width: 576px){
