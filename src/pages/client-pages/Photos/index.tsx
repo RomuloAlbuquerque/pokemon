@@ -12,20 +12,22 @@ const Photos = () => {
   
   const {id} = useParams()
 
-  const [el, setEl] = useState<card>();
+  const [el, setEl] = useState<card[]>();
 
   useEffect(() => {
     axios
-    .get(`${baseUrl}/client/card-details/${id}`, {
+    .get(`${baseUrl}/client/card-collection`, {
       headers: { "ngrok-skip-browser-warning": 6942 },
     })
     .then((response) => {
       setEl(response.data);
     });
-}, [id]);
+}, []);
+
+const client =  el?.find(x=>Number(x.id)===Number(id))
 
   const info: Info = {
-    info: `Cliente/ ${el?.title}/ Fotos`,
+    info: `Cliente/ ${client?.title}/ Fotos`,
     subInfo: ""
   }
   return (
