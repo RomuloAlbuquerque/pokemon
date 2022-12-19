@@ -7,15 +7,21 @@ import "./style.css";
 
 const About = () => {
 
-const {id} = useParams()
+  const {id} = useParams()
 
-const [el, setEl] = useState<card>();
+  const [el, setEl] = useState<card[]>();
 
-useEffect(() => {
-  axios.get(`${baseUrl}/client//card-details/${id}`, { headers: {"ngrok-skip-browser-warning": 6942}}).then((response) => {
-    setEl(response.data);
-  })
-},[id]);
+  useEffect(() => {
+    axios
+    .get(`${baseUrl}/client/card-collection`, {
+      headers: { "ngrok-skip-browser-warning": 6942 },
+    })
+    .then((response) => {
+      setEl(response.data);
+    });
+}, []);
+
+const client =  el?.find(x=>Number(x.id)===Number(id))
 
   return (
     <div>
@@ -29,13 +35,13 @@ useEffect(() => {
                     <h2>Sobre</h2>
                   </div>
                   <div className="detail-card-about">
-                    <p>Nome: {el?.title}</p>
-                    <p>Telefone:</p>
-                    <p>E-mail:</p>
-                    <p>Aniversário: {el?.detail}</p>
-                    <p>Agendamento:</p>
+                    <p>Nome: {client?.title}</p>
+                    <p>Tclientefone:{client?.id}{client?.id}{client?.id}{client?.id}{client?.id}{client?.id}{client?.id}{client?.id}</p>
+                    <p>E-mail: {client?.title}@email.com</p>
+                    <p>Aniversário: {client?.detail}</p>
+                    <p>Agendamento: Não há agendamento</p>
                     <p>Anotações:</p>
-                    <p>Pontos: {el?.id}</p>
+                    <p>Pontos: {client?.id}</p>
                   </div>
                 </div>
               </div>
