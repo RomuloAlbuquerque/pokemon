@@ -11,21 +11,24 @@ import { useEffect, useState } from "react";
 import { card } from "types/card";
 
 const Client = () => {
-  const { id } = useParams();
-  const [el, setEl] = useState<card>();
+  const {id} = useParams()
+
+  const [el, setEl] = useState<card[]>();
 
   useEffect(() => {
     axios
-      .get(`${baseUrl}/client//card-details/${id}`, {
-        headers: { "ngrok-skip-browser-warning": 6942 },
-      })
-      .then((response) => {
-        setEl(response.data);
-      });
-  }, [id]);
+    .get(`${baseUrl}/client/card-collection`, {
+      headers: { "ngrok-skip-browser-warning": 6942 },
+    })
+    .then((response) => {
+      setEl(response.data);
+    });
+}, []);
+
+const client =  el?.find(x=>Number(x.id)===Number(id))
 
   const info: Info = {
-    info: `Cliente: ${el?.title}`,
+    info: `Cliente: ${client?.title}`,
     subInfo: "",
   };
 
