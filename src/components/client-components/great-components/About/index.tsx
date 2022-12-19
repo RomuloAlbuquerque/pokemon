@@ -36,9 +36,9 @@ const client =  el?.find(x=>Number(x.id)===Number(id))
                   </div>
                   <div className="detail-card-about">
                     <p>Nome: {client?.title}</p>
-                    <p>Tclientefone:{client?.id}{client?.id}{client?.id}{client?.id}{client?.id}{client?.id}{client?.id}{client?.id}</p>
+                    <p>Fone:{client?.id}{client?.id}{client?.id}{client?.id}{client?.id}{client?.id}{client?.id}{client?.id}</p>
                     <p>E-mail: {client?.title}@email.com</p>
-                    <p>Aniversário: {client?.detail}</p>
+                    <p>Aniversário: {client?.detail.slice(6)}</p>
                     <p>Agendamento: Não há agendamento</p>
                     <p>Anotações:</p>
                     <p>Pontos: {client?.id}</p>
