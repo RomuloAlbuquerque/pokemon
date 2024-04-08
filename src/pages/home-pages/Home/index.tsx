@@ -5,7 +5,7 @@ import "../Home/style.css";
 
 const clients:Info = {
   info: 'Rosângela /',
-  subInfo: 'Seja Bem Vinda'
+  subInfo: 'Seja Bem Vinda!'
 }
 
 const Home = () => {
